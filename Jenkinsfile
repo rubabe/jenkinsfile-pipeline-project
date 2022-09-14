@@ -1,12 +1,12 @@
-    echo 'not using shell in the Jenkinsfile'
-    pipeline {
+pipeline {
     agent any
     stages {
         stage('build') {
             steps {
-                echo "Welcome to Jenkins Class"
-                sh 'echo using shell within Jenkinsfile'
-                    }
+                echo 'This message come from Jenkins Groovy Language'
+                sh 'echo This message come from shell within Jenkinsfile'
+                sh 'echo Integrating Jenkins Pipeline with GitHub Webhook using Jenkinsfile'
+            }
         }
     }
 }
